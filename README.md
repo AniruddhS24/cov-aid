@@ -1,4 +1,4 @@
-# COVIDForecasting
+# COV-(AI)D
 
 Coronaviruses are a group of viruses that can cause illness in animals and humans. Coronavirus Disease 2019 (COVID-19) is a disease that was identified in Wuhan, China and is now being spread throughout the world. In this project, I tried to develop a model using deep-learning methods to predict COVID-19 case growth in U.S. states.
 
