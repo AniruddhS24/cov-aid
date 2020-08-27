@@ -10,7 +10,6 @@ class RNN(nn.Module):
         self.dense = nn.Linear(hid_size,op_size)
 
         nn.init.xavier_uniform_(self.dense.weight)
-        #nn.init.xavier_normal_(self.dense.weight)
 
     def forward(self, x):
         ho = torch.zeros(self.rnn.num_layers,x.size(0),self.rnn.hidden_size)
