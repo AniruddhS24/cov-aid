@@ -6,7 +6,7 @@ By utilizing deep learning techniques, we study past COVID-19 case trends to for
 
 # Data Collection
 
-Here are the key data points collected:
+The key data points collected were COVID-19 case counts and Human Mobility data. Upon viewing the mobility trends and COVID-19 case counts for different states, it seemed as if high rates of human mobility (lack of social distancing) influenced spikes in COVID-19 cases. The sources of the datasets are described below:
 
 ## COVID-19 Case Counts
 COVID-19 case count data was collected from the  Johns Hopkins University Center for Systems Science and Engineering (CSSE), as they have done a wonderful job of tracking COVID cases around the world. The case counts were cleaned and normalized before being fed to the model, but you can view & download the data here:
