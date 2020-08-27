@@ -1,9 +1,8 @@
-import matplotlib.pyplot as plt, mpld3
+import mpld3
 from mpld3 import plugins
-from covidforecast import *
+from src.covidforecast import *
 import json
 from scipy.ndimage.filters import gaussian_filter1d
-from math import sqrt
 
 if __name__ == '__main__':
 

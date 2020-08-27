@@ -1,10 +1,10 @@
 import pandas as pd
-from models import *
+from src.models import *
 import matplotlib.pyplot as plt
 import json
 
 def process_data_USA(dailycts=False,norm_indiv=False,past_days=120):
-    apl_datab = pd.read_csv("data/applemobility3.csv")
+    apl_datab = pd.read_csv("../data/applemobility3.csv")
     appledata = apl_datab.loc[(apl_datab['country'] == 'United States') & (apl_datab['geo_type'] == 'sub-region'),
                 :].drop(
         columns=['geo_type',
@@ -17,7 +17,7 @@ def process_data_USA(dailycts=False,norm_indiv=False,past_days=120):
     appledata.drop(["Guam", "Virgin Islands"], inplace=True)
     appledata = appledata.fillna(100)
 
-    cvd_datab = pd.read_csv('data/coviddata3.csv')
+    cvd_datab = pd.read_csv('../data/coviddata3.csv')
     coviddata = cvd_datab.drop(columns=['UID',
                                         'iso2',
                                         'iso3',
@@ -100,7 +100,7 @@ def runcovid():
         #appd = np.concatenate((model.invert_scale(y_data[i,:],i),prd[-offst:]),0)
         lines.append(np.round(appd).tolist())
 
-    with open('linedata10.txt','w') as fp:
+    with open('../linedata10.txt', 'w') as fp:
         json.dump(lines,fp)
 
     return lines,places

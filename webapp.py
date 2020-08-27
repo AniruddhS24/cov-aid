@@ -1,5 +1,4 @@
-import matplotlib.pyplot as plt, mpld3
-from covidforecast import *
+from src.covidforecast import *
 
 fig, ax = plt.subplots()
 ax.set_title('Click on legend line to toggle line on/off')
