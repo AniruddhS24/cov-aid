@@ -32,3 +32,5 @@ Overall, the model performed considerably well, with an MAE of around 600. The f
 The project website is linked here: https://covidforecast.weebly.com/
 
 Unfortunately, I don't have a real domain at the moment, but this will hopefully be changed soon. (Note: the site was active from May 2020, but if you are viewing this post-2020 or post-COVID the site may be outdated/removed).
+
+TODO: Build automated web driver to scrape data, run model and update site
